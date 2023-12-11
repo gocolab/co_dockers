@@ -1,5 +1,8 @@
 # 최신 Python 이미지 사용
-FROM python:latest
+# FROM python:3.9
+# arm MAX OS
+FROM arm64v8/python:3.9
+
 
 # ubuntu update & upgrade
 RUN apt-get update -y && apt-get upgrade -y
@@ -16,9 +19,6 @@ WORKDIR /app
 # Git repository clone
 RUN git clone https://github.com/yojulab/temp_gits
 RUN rm -rf .git
-
-# install vscode extension
-# RUN curl -fsSL https://code-server.dev/install.sh | sh
 
 CMD echo "Hello, World!"
 
