@@ -10,8 +10,10 @@ RUN apt-get install -y git
 WORKDIR /app
 
 # Git repository clone
-RUN git clone https://github.com/gocolab/test_deploy_heroku
+RUN git clone https://github.com/yojulab/study_pythons
+
+WORKDIR /app/study_pythons
 RUN rm -rf .git
 
-CMD echo "Hello, World!"
+# CMD echo "Hello, World!"
 

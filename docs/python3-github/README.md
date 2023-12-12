@@ -1,6 +1,8 @@
-#### CLI with Dockerfile and compose.xml : duration 50.4s
+#### CLI with Dockerfile and compose.xml : duration 150.4s
 ```
 ~$ docker-compose build
 ~$ docker-compose up -d
-~$ docker exec -it <컨테이너 id> /bin/bash     # reRun
+
+~$ docker-compose down
+~$ docker-compose up     # reRun
 ```
