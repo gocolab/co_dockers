@@ -6,5 +6,9 @@ WORKDIR /app
 # Git repository clone
 RUN git clone https://github.com/yojulab/study_databases
 
-RUN rm -rf ./study_databases/.git
+WORKDIR /app/study_databases
+
+# RUN pip install --no-cache-dir -r ./requirements.txt
+
+RUN rm -rf .git
 

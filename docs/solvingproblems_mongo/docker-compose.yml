@@ -1,15 +1,22 @@
 version: '1.0'
 services:
   app:
-    container_name: python3
+    container_name: solvingproblem-python_3
     build:
       context: .
       dockerfile: Dockerfile
     tty: true
+    networks:
+      - webnet
 
   mongodb:
     image: mongo:7
-    container_name: mongodb
+    container_name: solvingproblem-mongodb_7
     restart: always
     ports:
       - 27017:27017
+    networks:
+      - webnet      
+
+networks:
+  webnet:

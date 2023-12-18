@@ -1,8 +1,0 @@
-version: '3'
-services:
-  python-app:
-    image: python:3.11
-    # volumes:
-    #   - .:/app
-    working_dir: /app
-    command: bash -c "apt-get install -y git && git clone https://github.com/ohjisu320/study_pythons && /bin/bash"
