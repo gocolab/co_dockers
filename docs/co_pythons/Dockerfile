@@ -10,7 +10,5 @@ RUN git clone -b debugs https://github.com/gocolab/co_pythons.git
 
 WORKDIR /app/co_pythons
 
-# RUN pip install --no-cache-dir -r ./requirements.txt
-
 RUN rm -rf .git
 

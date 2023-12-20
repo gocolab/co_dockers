@@ -4,9 +4,9 @@ FROM python:3.11
 WORKDIR /app
 
 # Git repository clone
-RUN git clone -b complets https://github.com/gocolab/co_pythonwithmongo co_pythonwithmongo_complets
+# RUN git clone -b complets https://github.com/gocolab/co_pythonwithmongo co_pythonwithmongo_complets
 
-RUN git clone -b complets https://github.com/gocolab/co_pythonwithmongo
+RUN git clone -b debugs https://github.com/gocolab/co_pythonwithmongo
 
 WORKDIR /app/co_pythonwithmongo
 
